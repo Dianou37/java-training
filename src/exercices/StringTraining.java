@@ -25,7 +25,7 @@ public class StringTraining {
      * @return if origin string is equal to compare string
      */
     public static boolean equals(String origin, String compare) {
-	if(origin == compare) {
+	if(origin.equals(compare)) {
         return true;
 	}
 	return false;
@@ -176,7 +176,7 @@ public class StringTraining {
      */
     public static String join(String[] strings, String delimiter) {
         // https://howtodoinjava.com/java8/java-8-join-string-array-example/
-    	String join = String.join(delimiter, strings );
-        return join;
+    	
+        return String.join(delimiter, strings );
     }
 }
